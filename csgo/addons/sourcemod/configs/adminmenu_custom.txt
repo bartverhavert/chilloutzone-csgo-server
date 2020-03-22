@@ -85,5 +85,50 @@
 				"2."		"NO"
 			}
         }
+        "Show impacts"
+        {
+            "cmd"           "sv_showimpacts @1"
+			"admin"			"sm_kick"
+			"execute"		"server"
+            "1"
+            {
+                "type" 		"list"
+				"title"		"Show impacts"
+				"1"		    "1"
+				"1."		"Yes"
+				"2"		    "0"
+				"2."		"NO"
+			}
+        }
+        "Infinite ammo"
+        {
+            "cmd"           "sv_infinite_ammo @1"
+			"admin"			"sm_kick"
+			"execute"		"server"
+            "1"
+            {
+                "type" 		"list"
+				"title"		"Infinite ammo"
+				"1"		    "1"
+				"1."		"Yes"
+				"2"		    "0"
+				"2."		"NO"
+			}
+        }
+        "Start money"
+        {
+            "cmd"           "mp_startmoney @1"
+			"admin"			"sm_kick"
+			"execute"		"server"
+            "1"
+            {
+                "type" 		"list"
+				"title"		"Start money"
+				"1"		    "800"
+				"1."		"Default (800)"
+				"2"		    "16000"
+				"2."		"16 000"
+			}
+        }
 	}
 }
