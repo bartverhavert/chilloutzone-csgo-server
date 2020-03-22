@@ -17,7 +17,7 @@
             "execute"       "server"
         }
     }
-	"Ccommands"
+	"Commands"
 	{
 		"Kick all bots"
 		{
@@ -49,10 +49,10 @@
             {
                 "type" 		"list"
 				"title"		"Buy anywhere"
-				"1"		    "0"
-				"1."		"No"
-				"2"		    "1"
-				"2."		"Yes"
+				"1"		    "1"
+				"1."		"Yes"
+				"2"		    "0"
+				"2."		"No"
 			}
         }
         "Auto team balance"
@@ -64,10 +64,10 @@
             {
                 "type" 		"list"
 				"title"		"Auto team balance"
-				"1"		    "0"
-				"1."		"No"
-				"2"		    "1"
-				"2."		"Yes"
+				"1"		    "1"
+				"1."		"Yes"
+				"2"		    "0"
+				"2."		"No"
 			}
         }
         "Friendly fire"
@@ -79,10 +79,10 @@
             {
                 "type" 		"list"
 				"title"		"Friendly fire"
-				"1"		    "0"
-				"1."		"No"
-				"2"		    "1"
-				"2."		"Yes"
+				"1"		    "1"
+				"1."		"Yes"
+				"2"		    "0"
+				"2."		"NO"
 			}
         }
 	}
