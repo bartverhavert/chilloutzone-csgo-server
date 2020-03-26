@@ -12,25 +12,31 @@
     {
         "Casual"
         {
-            "cmd"           "game_type 0; game_mode 0; exec gamemode_casual; mp_restartgame 1;"
+            "cmd"           "game_type 0; game_mode 0; mp_restartgame 1;"
             "admin"         "sm_kick"
             "execute"       "server"
         }
         "Competitive"
         {
-            "cmd"           "game_type 0; game_mode 1; exec gamemode_competitive; mp_restartgame 1;"
+            "cmd"           "game_type 0; game_mode 1; mp_restartgame 1;"
             "admin"         "sm_kick"
             "execute"       "server"
         }
         "Gungame"
         {
-            "cmd"           "game_type 1; game_mode 0; exec gamemode_armsrace; mp_restartgame 1;"
+            "cmd"           "game_type 1; game_mode 0; mp_restartgame 1;"
             "admin"         "sm_kick"
             "execute"       "server"
         }
         "Deathmatch"
         {
-            "cmd"           "game_type 1; game_mode 2; exec gamemode_deathmatch; mp_restartgame 1;"
+            "cmd"           "game_type 1; game_mode 2; mp_restartgame 1;"
+            "admin"         "sm_kick"
+            "execute"       "server"
+        }
+        "Wingman"
+        {
+            "cmd"           "game_type 0; game_mode 2; mp_restartgame 1;"
             "admin"         "sm_kick"
             "execute"       "server"
         }
