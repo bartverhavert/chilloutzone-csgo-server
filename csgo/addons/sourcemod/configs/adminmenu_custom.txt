@@ -10,6 +10,18 @@
 {
     "Game modes"
     {
+        "FUN"
+        {
+            "cmd"           "game_type 3; game_mode 1; mp_restartgame 1;"
+            "admin"         "sm_kick"
+            "execute"       "server"
+        }
+        "PRACTICE"
+        {
+            "cmd"           "game_type 3; game_mode 2; mp_restartgame 1;"
+            "admin"         "sm_kick"
+            "execute"       "server"
+        }
         "Casual"
         {
             "cmd"           "game_type 0; game_mode 0; mp_restartgame 1;"
