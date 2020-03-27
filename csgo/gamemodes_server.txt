@@ -1,0 +1,153 @@
+// To use this file, rename it to GameModes_Server.txt
+//
+// Values here override the default gamemodes.txt
+
+"GameModes_Server.txt"
+{
+	"gameTypes"
+	{
+		"gungame"
+		{
+			"gameModes"
+			{
+				"chilloutzone_fun"
+				{
+					"value"				"1"
+					"maxplayers"		"10"
+
+					"exec"
+					{
+						"exec" "gamemode_competitive.cfg"
+						"exec" "gamemode_chilloutzone_fun.cfg"
+					}
+
+					"mapgroupsMP"
+					{
+						"mg_chilloutzone_fun"	"0"
+					}
+				}
+
+				"chilloutzone_practice"
+				{
+					"value"				"2"
+					"maxplayers"		"10"
+
+					"exec"
+					{
+						"exec" "gamemode_competitive.cfg"
+						"exec" "gamemode_chilloutzone_practice.cfg"
+					}
+
+					"mapgroupsMP"
+					{
+						"mg_chilloutzone_practice"	"0"
+					}
+				}
+			}
+		}
+	}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Map groups
+//
+// To use a mapgroup, it needs to be defined in a keyvalues
+// block such as the example below, as well as listed in the
+// 'mapgroupsMP' block within the game mode that will run it,
+// such as the example above.
+//
+// Then launch the server with '+mapgroup MAPGROUPNAME'
+//
+// Example:
+//
+// srcds -game csgo +game_mode 1 +mapgroup mg_bomb +map de_nuke
+//
+//
+// Check the developer wiki for updated community info
+// https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	"mapgroups"
+	{
+		"mg_chilloutzone_fun"
+		{
+			"imagename"		"mapgroup-hostage"
+			"nameID"		"#SFUI_Mapgroup_hostage"
+			"name"			"mg_hostage"
+			"maps"
+			{
+				"cs_office"		""
+				"cs_italy"		""
+			}
+		}
+
+		"mg_chilloutzone_practice"
+		{
+			"imagename"		"mapgroup-bomb"
+			"nameID"		"#SFUI_Mapgroup_bomb"
+			"name"			"mg_bomb"
+			"maps"
+			{
+				"de_dust2"		""
+				"de_train"		""
+				"de_inferno"	""
+				"de_aztec"		""
+				"de_nuke"		""
+			}
+		}
+	}
+
+	"maps"
+	{
+
+		//
+		// Random Map
+		//
+
+		"random"
+		{
+			"nameID"			"#SFUI_Map_random"
+			"name"				"random"
+			"minplayers"		"#SFUI_VariesByMap"
+			"maxplayers"		"#SFUI_VariesByMap"
+			"imagename"			"map-random-overall"
+			"t_models"
+			{
+				// these will be pulled from the assigned map
+			}
+			"ct_models"
+			{
+				// these will be pulled from the assigned map
+			}
+		}
+
+		//
+		// DLC Maps
+		//
+
+		"de_embassy"
+		{
+			"nameID"			"#SFUI_Map_de_embassy"
+			"name"				"de_embassy"
+			"imagename"			"map-dust-overall"
+			"t_arms"			"models/weapons/t_arms.mdl"
+			"t_models"
+			{
+				"tm_anarchist"		""
+				"tm_anarchist_variantA"		""
+				"tm_anarchist_variantb"		""
+				"tm_anarchist_variantc"		""
+				"tm_anarchist_variantd"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_swat.mdl"
+			"ct_models"
+			{
+				"ctm_swat"			""
+				"ctm_swat_variantA"		""
+				"ctm_swat_variantB"		""
+				"ctm_swat_variantC"		""
+				"ctm_swat_variantD"		""
+			}
+		}
+	}
+}
