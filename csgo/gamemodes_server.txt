@@ -13,7 +13,6 @@
 				"chilloutzone_fun"
 				{
 					"value"				"1"
-					"maxplayers"		"10"
 
 					"exec"
 					{
@@ -30,7 +29,6 @@
 				"chilloutzone_practice"
 				{
 					"value"				"2"
-					"maxplayers"		"10"
 
 					"exec"
 					{
