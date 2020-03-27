@@ -6,6 +6,7 @@ Configs
 {
 	"cfg/server.cfg"			"Standard Server Setup"
     "cfg/gamemode_chilloutzone_fun.cfg"			"ChilloutZone fun config"
+    "cfg/gamemode_chilloutzone_practice.cfg"			"ChilloutZone practice config"
 	"cfg/sourcemod/sm_warmode_on.cfg"	"War Mode On"
 	"cfg/sourcemod/sm_warmode_off.cfg"	"War Mode Off"
 }
